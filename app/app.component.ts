@@ -13,7 +13,7 @@ export class AppComponent {
 	public descripcion: string;
 
 	constructor(){
-		this.titulo ='APP FAVORITOS TITULO';
+		this.titulo ='APP FAVORITOS';
 		this.descripcion = 'Aplicacion web SPA con Angular 2 para gestionar marcadores';
 	}
 

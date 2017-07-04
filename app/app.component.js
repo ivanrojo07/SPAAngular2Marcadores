@@ -13,7 +13,7 @@ var core_1 = require('@angular/core');
 // Decorador component, indicamos en que etiqueta se va a cargar la plantilla
 var AppComponent = (function () {
     function AppComponent() {
-        this.titulo = 'APP FAVORITOS TITULO';
+        this.titulo = 'APP FAVORITOS';
         this.descripcion = 'Aplicacion web SPA con Angular 2 para gestionar marcadores';
     }
     AppComponent = __decorate([

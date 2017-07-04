@@ -1,0 +1,20 @@
+<div class="favorito-add">
+<h1>{{tituloVista}}</h1>
+<form #formFavorito="ngForm" (ngSubmit)="onSubmit()">
+	<label>Titulo:</label>
+	<p>
+		<input type="text" name="title" #title="ngModel" [(ngModel)]="favorito.title"  required autofocus>
+		<span *ngIf="title.touched && !title.valid">Titulo requerido</span>
+	</p>
+	<label>Descripción:</label>
+	<p>
+		<textarea type="text" name="description" #description="ngModel" [(ngModel)]="favorito.description" required></textarea>	
+	</p>
+
+	<p>
+		<input type="url" name="url" #url="ngModel" [(ngModel)]="favorito.url" required>
+		<span *ngIf="url.touched && !url.valid">Direccion requerida</span>
+	</p>
+	<input type="submit" value="{{tituloVista}}" >
+</form>
+<div>
